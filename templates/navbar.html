@@ -1,0 +1,57 @@
+{% block top %}
+{% endblock %}
+
+<!-- Navbar Starts Here -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <!-- Mobile Navbar -->
+        <div class="navbar-header">
+            <!-- <a class="navbar-brand" href=""> -->
+            <!-- </a> -->
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                darkbin
+            </a>
+        </div>
+
+        <!-- Desktop Navbar -->
+        <div id="navbar" class="collapse navbar-collapse">
+
+            <!-- Left -->
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="{{ url_for('index') }}">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('new_paste') }}">
+                        Add Paste
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('hall_of_loosers') }}">
+                        Hall of Loosers
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('tos') }}">
+                        TOS
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Right -->
+            <div class="sidebar-right">
+                <ul class="nav navbar-nav">
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+<!-- Navar Ends Here -->
+
+{% block bottom %}
+{% endblock %}
